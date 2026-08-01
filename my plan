@@ -1,0 +1,162 @@
+<!-- Copia todo este bloque -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lirio Planner</title>
+<style>
+body{
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background:#eef2e8;
+  color:#4d5942;
+}
+.container{
+  max-width:420px;
+  margin:auto;
+  padding:16px;
+}
+.card{
+  background:white;
+  border-radius:24px;
+  padding:18px;
+  margin-bottom:16px;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+h1{
+  margin:0;
+  font-size:42px;
+  line-height:0.95;
+  color:#6b7f53;
+}
+.subtitle{
+  color:#7f8a75;
+  margin-top:10px;
+}
+.hero img{
+  width:100%;
+  border-radius:22px;
+  margin-top:16px;
+}
+.calendar{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:8px;
+  margin-top:12px;
+}
+.day{
+  background:#f7f9f4;
+  border-radius:14px;
+  padding:10px 0;
+  text-align:center;
+  font-size:14px;
+}
+.start{
+  background:#e8efdf;
+  font-weight:700;
+  color:#5f7248;
+}
+.check{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:12px;
+  background:#f7f9f4;
+  border-radius:16px;
+  margin-bottom:10px;
+}
+textarea{
+  width:100%;
+  min-height:90px;
+  border:none;
+  background:#f7f9f4;
+  border-radius:16px;
+  padding:14px;
+  font-size:15px;
+}
+.verse{
+  background:#eef4e7;
+  border-radius:20px;
+  padding:16px;
+  line-height:1.6;
+}
+.small{font-size:13px;color:#7f8a75}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="card hero">
+    <div class="small">Agosto 2026 • Reset month 🌿</div>
+    <h1>Lirio<br>Planner</h1>
+    <div class="subtitle">Estudio, ejercicio, skincare y bienestar en un solo lugar.</div>
+    <img src="https://unsplash.com" alt="tulipanes">
+  </div>
+
+  <div class="card">
+    <h3>Calendario • Empieza el 3 de agosto</h3>
+    <div class="calendar">
+      <div class="day">1</div><div class="day">2</div>
+      <div class="day start">3</div><div class="day">4</div><div class="day">5</div>
+      <div class="day">6</div><div class="day">7</div><div class="day">8</div>
+      <div class="day">9</div><div class="day">10</div><div class="day">11</div>
+      <div class="day">12</div><div class="day">13</div><div class="day">14</div>
+      <div class="day">15</div><div class="day">16</div><div class="day">17</div>
+      <div class="day">18</div><div class="day">19</div><div class="day">20</div>
+      <div class="day">21</div><div class="day">22</div><div class="day">23</div>
+      <div class="day">24</div><div class="day">25</div><div class="day">26</div>
+      <div class="day">27</div><div class="day">28</div><div class="day">29</div>
+      <div class="day">30</div><div class="day">31</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Versículo del día 🌸</h3>
+    <div class="verse">
+      <strong>Filipenses 4:13</strong><br>
+      Todo lo puedo en Cristo que me fortalece.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Estudio diario 📚</h3>
+    <textarea placeholder="¿Qué estudiaste hoy? ¿Qué aprendiste?"></textarea>
+  </div>
+
+  <div class="card">
+    <h3>Workout checklist 🏃‍♀️</h3>
+    <label class="check"><input type="checkbox"> ABS WORKOUT • LESS SERAFFIM</label>
+    <label class="check"><input type="checkbox"> PAMELA REIFF • LEGS</label>
+    <label class="check"><input type="checkbox"> CAMINATA</label>
+    <label class="check"><input type="checkbox"> KAZUHA WORKOUT</label>
+  </div>
+
+  <div class="card">
+    <h3>Skin care & personal love 🌿</h3>
+    <div class="small">Mañana</div>
+    <label class="check"><input type="checkbox"> Limpiador</label>
+    <label class="check"><input type="checkbox"> Hidratante</label>
+    <label class="check"><input type="checkbox"> Protector solar</label>
+
+    <div class="small" style="margin-top:10px">Noche</div>
+    <label class="check"><input type="checkbox"> Doble limpieza</label>
+    <label class="check"><input type="checkbox"> Tratamiento</label>
+    <label class="check"><input type="checkbox"> Hidratante</label>
+
+    <div class="small" style="margin-top:10px">Semanal</div>
+    <label class="check"><input type="checkbox"> Exfoliación</label>
+    <label class="check"><input type="checkbox"> 2L de agua 💧</label>
+  </div>
+
+  <div class="card">
+    <h3>Calorías & piel 🥑</h3>
+    <p><strong>Peso:</strong> 46 kg<br>
+    <strong>Estatura:</strong> 164 cm<br>
+    <strong>Meta:</strong> 1650–1800 kcal</p>
+    <textarea placeholder="Escribe tus comidas de hoy y luego me las puedes enviar para ayudarte con el acné y las calorías."></textarea>
+  </div>
+
+</div>
+</body>
+</html>
